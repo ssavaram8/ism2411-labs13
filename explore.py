@@ -1,5 +1,5 @@
 # Self Assessment Questions:
-# 1.
+#1.
 
 #2. 
 
@@ -40,4 +40,13 @@ print(df.head())
 print("Exercise 6: Unique values") #!!!
 
 print(df["region"].unique())
-print(df["region"].value_counts())
+print(df["region"].value_counts().plot)
+
+print("Exercise 7: Select Columns") #!!!
+
+df_subset = df[["region", "product", "revenue"]]
+print(df_subset.shape)
+
+print("Exercise 8: Save") #!!!
+
+df.to_csv("data/explored.csv", index = False)
